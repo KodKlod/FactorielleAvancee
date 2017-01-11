@@ -1,13 +1,11 @@
 package co.simplon.factorielle;
 
-public class ExceptionFactorielle extends Exception {
+public class ExceptionFactorielle extends RuntimeException {
+
+	private static final long serialVersionUID = 1L;
 
 	public ExceptionFactorielle() {
 		super ();
 	}
-	
-	public String monException (){
-		String monMessage = "";
-		return monMessage ="La variable de long ne peut contenir une factorielle de chiffre supérieur à 49";
-	}
+	//On peut éventuellement créer un constructeur porteur d'un msg
 }
