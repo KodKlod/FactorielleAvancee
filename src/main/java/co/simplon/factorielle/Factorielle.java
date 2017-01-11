@@ -9,7 +9,7 @@ public class Factorielle
     		super();
     }
     
-    public long calculer(long n) throws ExceptionFactorielle {
+    public long calculer(long n) {
     		if (n > 1) {
     			long resultat = n * calculer(n-1);
     			if (resultat<0) {
