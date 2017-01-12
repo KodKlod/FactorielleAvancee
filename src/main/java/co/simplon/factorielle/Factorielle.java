@@ -21,5 +21,5 @@ public class Factorielle
     		}
     		return 1;
     }
-
+    
 }
