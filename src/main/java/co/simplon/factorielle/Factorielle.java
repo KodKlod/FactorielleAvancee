@@ -9,7 +9,10 @@ public class Factorielle
     		super();
     }
     
-    public long calculer(long n) {
+    //Les throws permettent que les execptions
+    //apparaîssent plus facilement dans la Javadoc
+    //Et faciliteront la construction des Try/catch
+    public long calculer(long n) throws ExceptionFactorielle, IllegalArgumentException{
     		if (n > 1) {
     			long resultat = n * calculer(n-1);
     			if (resultat<0) {
