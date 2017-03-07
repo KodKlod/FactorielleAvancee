@@ -14,6 +14,10 @@ public class ExceptionFactorielle extends RuntimeException {
 		super();
 		this.setMsg("msg");
 	}
+	//Ou mieux encore un constructeur avec la cause de l'exception
+	public ExceptionFactorielle (Exception cause){
+		super(cause);
+	}
 
 	public void setMsg(String msg) {
 		this.msg = msg;
